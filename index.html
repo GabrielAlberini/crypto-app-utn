@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aplicación de Mensajes Encriptados</title>
+    <!-- Incluir el CDN de Bulma -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="has-background-dark has-text-white">
+    <div
+      class="full-height is-flex is-align-items-center is-justify-content-center"
+    >
+      <section class="section">
+        <div
+          class="container has-background-dark p-5"
+          style="border-radius: 8px"
+        >
+          <h1 class="title has-text-white">
+            Aplicación de Mensajes Encriptados
+          </h1>
+          <textarea
+            id="message"
+            class="textarea has-background-light has-text-black"
+            rows="4"
+            placeholder="Escribe tu mensaje aquí..."
+          ></textarea>
+          <div class="field">
+            <label class="label has-text-white">Clave</label>
+            <div class="control">
+              <input
+                type="password"
+                id="key"
+                class="input has-background-light has-text-black"
+                placeholder="Introduce la clave (prueba-utn)"
+              />
+            </div>
+          </div>
+          <div class="buttons">
+            <button id="encryptBtn" class="button is-primary is-fullwidth">
+              Encriptar
+            </button>
+            <button id="decryptBtn" class="button is-info is-fullwidth">
+              Desencriptar
+            </button>
+          </div>
+          <div
+            id="result"
+            class="notification is-light mt-4"
+            style="display: none"
+          ></div>
+        </div>
+      </section>
+    </div>
+
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
